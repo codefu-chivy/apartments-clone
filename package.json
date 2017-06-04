@@ -14,5 +14,15 @@
     "responsive"
   ],
   "author": "Chival Trotman",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "bourbon": "^4.3.4",
+    "grunt": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^2.0.0",
+    "load-grunt-tasks": "^3.5.2"
+  },
+  "dependencies": {
+    "bourbon": "^4.3.4"
+  }
 }
