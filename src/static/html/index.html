@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Apartments.com Clone</title>
+    <meta charset="utf-8"/>
+    <meta name="description" content="A clone of the apartments.com front page"/>
+    <script src="https://use.fontawesome.com/a43c429b20.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  </head>
+  <body>
+    <div id="main">
+      <header>
+        <nav>
+          <p><i class="fa fa-bars"></i> Menu <span>Apartments Clone</span> <a href="#">Sign Up</a>/<a href="#">Sign In</a><button>Add a Listing</button></p>
+        </nav>
+        <img src="../images/apartments.jpg" alt="main image" title="banner"/>
+        <div id="search-block">
+          <h1>Rent An Apartment. Find Your Home</h1>
+          <div id="search-selection">
+            <ul>
+              <li>All</li>
+              <li>Apartments</li>
+              <li>Condos</li>
+              <li>Homes</li>
+              <li>Townhomes</li>
+            </ul>
+          </div>
+          <div id="search-go">
+            <input type="search" name="search-poi" placeholder="Search by Location or Point of Interest"/>
+            <div>
+              <h3>Rent Range</h3>
+            </div>
+            <div>
+              <h3>Beds x Baths</h3>
+            </div>
+            <input type="submit" value="Go"/>
+          </div>
+        </div>
+      </header>
+      <main>
+        <h2>What are you looking for?</h2>
+        <p>Behind each apartment for rent, every innovative tool and local neighborhood we scour, there's a team driven to help you find your next rental home.</p>
+        <div class="image-cont">
+          <div class="list square">
+            <p><i class="fa fa-key" aria-hidden="true"></i></p>
+            <h3>List your rental</h3>
+            <p>Put your property in front of millions of renters who use Apartments.com. Post your rental in minutes.</p>
+            <button id="listing-button">Free Listing</button>
+          </div>
+          <div class="resources square">
+            <p><i class="fa fa-th" aria-hidden="true"></i></p>
+            <h3>Renter's Resources</h3>
+            <p>Stay on top of the latest advice from Apartments.com from how to style your apartment to moving tips.</p>
+            <button id="resources-button">Learn More</button>
+          </div>
+          <div class="mobile square">
+            <p><i class="fa fa-mobile" aria-hidden="true"></i></p>
+            <h3>Mobile Apps</h3>
+            <p>Wherever you go, we'll be with you. Web, tablet or mobile: Your choice!</p>
+            <img src="../images/google.png" title="download on google play store" alt="download"/>
+            <img src="../images/apple.png" title="download on apple store" alt="download"/>
+          </div>
+        </div>
+        <section class="listing">
+          <h2>#1 Apartment Listing Website</h2>
+          <p>We simplify the process of finding a new apartment by offering renters the most comprehensive database including millions of detailed and accurate apartment listings across the United States. Our innovative technology includes the POLYGON™ search tool that allows users to define their own search areas on a map and a "Plan Commute" feature that helps users search for rentals in proximity to their office.</p>
+        </section>
+        <section class="top-markets">
+          <h3>Top Markets</h3>
+          <div class="column1">
+            <ul>
+              <li>Atlanta Apartments</li>
+              <li>Austin Apartments</li>
+              <li>Baltimore Apartments</li>
+              <li>Boston Apartments</li>
+              <li>Chicago Apartments</li>
+            </ul>
+          </div>
+          <div class="column2">
+            <ul>
+              <li>Houston Apartments</li>
+              <li>Irvine Apartments</li>
+              <li>Los Angeles Apartments</li>
+              <li>Miami Apartments</li>
+              <li>Nashville Apartments</li>
+            </ul>
+          </div>
+          <div class="column3">
+            <ul>
+              <li>Phoenix Apartments</li>
+              <li>Portland Apartments</li>
+              <li>Queens Apartments</li>
+              <li>San Antonio</li>
+              <li>San Diego</li>
+            </ul>
+          </div>
+        </section>
+        <section class="popular">
+          <h3>Popular Searches</h3>
+          <div class="column1">
+            <ul>
+              <li>Cheap Apartments</li>
+              <li>Studios for Rent</li>
+              <li>1 Bedroom Apartments</li>
+              <li>2 Bedroom Apartments</li>
+              <li>3 Bedroom Apartments</li>
+            </ul>
+          </div>
+          <div class="column2">
+            <ul>
+              <li>Pet Friendly Apartments</li>
+              <li>Charlotte Homes for Rent</li>
+              <li>Houston Homes for Rent</li>
+              <li>Las Vegas Homes for Rent</li>
+              <li>Orlando Homes for Rent</li>
+            </ul>
+          </div>
+        </section>
+        <section class="guides">
+          <h3>Neighborhood Guides</h3>
+          <div class="column1">
+            <ul>
+              <li>Living in Briskell</li>
+              <li>Living in the Bronx</li>
+              <li>Living in East Atlanta</li>
+              <li>Living in East Austin</li>
+              <li>Living in Lincoln Park</li>
+            </ul>
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer>
+      <section class="ads">
+        <h3>Advertising</h3>
+        <div class="column1">
+          <ul>
+            <li>Advertise</li>
+            <li>Add a Listing</li>
+            <li>Customer Portal</li>
+            <li>Community Voice</li>
+          </ul>
+        </div>
+      </section>
+      <section class="market">
+        <h3>The Marketplace</h3>
+        <div class="column2">
+          <ul>
+            <li>Apartamentos.com</li>
+            <li>ApartmentFinder.com</li>
+            <li>ApartmentHomeLiving.com</li>
+            <li>WestsideRentals.com</li>
+            <li>LoopNet.com</li>
+            <li>Cityfeet.com</li>
+            <li>Showcase.com</li>
+            <li>BizBuySell.com</li>
+            <li>LandsofAmerica.com</li>
+          </ul>
+        </div>
+      </section>
+      <section class="neighborhoods">
+        <h3>Neighborhoods</h3>
+        <div class="column3">
+          <ul>
+            <li>Canton</li>
+            <li>Downtown Indianapolis</li>
+            <li>Downtown Portland</li>
+            <li>East Village</li>
+            <li>Hyde Park</li>
+            <li>Jamaica Plain</li>
+            <li>Logan Circle</li>
+            <li>Nob Hill</li>
+            <li>Old Fourth Ward</li>
+            <li>Uptown Dallas</li>
+          </ul>
+        </div>
+      </section>
+      <section class="featured">
+        <h3>Featured Cities</h3>
+        <div class="column4">
+          <ul>
+            <li>Bellevue, WA</li>
+            <li>Birmingham, AL</li>
+            <li>Cherry Hill, NJ</li>
+            <li>Colombia, SC</li>
+            <li>Crystal Lake, IL</li>
+            <li>Fayetteville, NC</li>
+            <li>Green Bay, WI</li>
+            <li>Indianapolis, IN</li>
+            <li>Irvine, CA</li>
+            <li>Jacksonville, FL</li>
+            <li>Lafayette, IN</li>
+          </ul>
+        </div>
+      </section>
+      <section class="about">
+        <h3>About Us</h3>
+        <div class="column5">
+          <ul>
+            <li>Who We Are</li>
+            <li>Careers</li>
+            <li>Contact Us</li>
+            <li>Terms of Service</li>
+            <li>Privacy Statement</li>
+            <li>Equal Housing</li>
+            <li>Avoid Scams</li>
+            <li>Blog</li>
+            <li>Sitemap</li>
+          </ul>
+        </div>
+      </section>
+    </footer>
+    <script src="../../js/index.js" defer></script>
+  </body>
+</html>    
+
