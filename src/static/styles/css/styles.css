@@ -1,4 +1,6 @@
 p ul {
-  color: red; }
+  color: red;
+  margin: 0 auto;
+  text-align: center; }
 
 /*# sourceMappingURL=styles.css.map */
