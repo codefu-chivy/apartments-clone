@@ -1,0 +1,55 @@
+$mainBox: 400px;
+
+main {
+    color: #404040;
+    h2 {
+        font-size: 50px;
+        margin-bottom: 5px;
+    }
+    p {
+        font-size: 18px;
+    }
+    h3 {
+        font-size: 40px;
+        text-align: left;
+    }
+}
+#about {
+    width: 46%;
+    margin: 0 auto;
+}
+.image-cont {
+    color: white;
+    width: 80%;
+    height: $mainBox * 5;
+    margin: 0 auto;
+}
+.images {
+    margin: 5px;
+    width: $mainBox;
+    height: $mainBox;
+    float: left;
+    background: no-repeat center center;
+    background-size: cover;
+}
+.square {
+    width: $mainBox;
+    height: $mainBox;
+    float: left;
+    margin: 5px;
+}
+.list {
+    background-color: dimgrey;
+}
+.resources {
+    background-color: dodgerblue;
+}
+.mobile {
+    background-color: #08B837;
+}
+#square1, #square4 {
+    width: $mainBox * 2;
+}
+.column {
+    float: left;
+}
