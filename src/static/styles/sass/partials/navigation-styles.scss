@@ -1,0 +1,68 @@
+$height: 55px;
+$font: gudea;
+$hoverColor: chartreuse;
+
+
+#nav {
+    height: $height;
+    margin-top: 0px;
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+    button {
+        height: $height;
+        font-family: $font;
+        font-size: 15px;
+        border: none;
+    }
+    button:hover {
+        cursor: pointer;
+        background-color: dimgray;
+        color: white;
+    }
+    ul {
+        height: $height;
+    }
+    li {
+        display: inline;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    a:hover {
+        color: $hoverColor;
+    }
+}
+#menu-button {
+    background-color: white;
+    margin-right: 25px;
+    width: 150px;
+}
+#menu {
+    float: left;
+    position: relative;
+    right: 40px;
+    p {
+        display: inline;
+        margin-left: 10px;
+        padding-bottom: 15px;
+    }
+}
+.nav-right {
+    float: right;
+}
+#main-title {
+    font-size: 20px;
+    font-family: merriweather;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+#add {
+    margin-left: 15px;
+    background-color: grey;
+    color: white;    
+    padding: 11px;
+    font-weight: bold;
+}
