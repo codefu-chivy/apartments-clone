@@ -1,6 +1,207 @@
-p ul {
-  color: red;
+#nav {
+  height: 55px;
+  margin-top: 0px;
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px; }
+  #nav button {
+    height: 55px;
+    font-family: gudea;
+    font-size: 15px;
+    border: none; }
+  #nav button:hover {
+    cursor: pointer;
+    background-color: dimgray;
+    color: white; }
+  #nav ul {
+    height: 55px; }
+  #nav li {
+    display: inline; }
+  #nav a {
+    text-decoration: none;
+    color: black; }
+  #nav a:hover {
+    color: chartreuse; }
+
+#menu-button {
+  background-color: white;
+  margin-right: 25px;
+  width: 150px; }
+
+#menu {
+  float: left;
+  position: relative;
+  right: 40px; }
+  #menu p {
+    display: inline;
+    margin-left: 10px;
+    padding-bottom: 15px; }
+
+.nav-right {
+  float: right; }
+
+#main-title {
+  font-size: 20px;
+  font-family: merriweather;
+  position: relative;
+  top: 20px;
+  left: 20px; }
+
+#add {
+  margin-left: 15px;
+  background-color: grey;
+  color: white;
+  padding: 10px;
+  font-weight: bold; }
+
+#banner {
+  width: 100%;
+  height: 670px;
+  background-image: url("/static/images/apartments.jpg");
+  margin-top: -53px;
+  color: white; }
+  #banner h1 {
+    font-family: pompiere;
+    font-size: 80px;
+    font-weight: normal; }
+  #banner input {
+    font-family: gudea; }
+
+#search-block {
+  position: relative;
+  top: 200px; }
+
+.params {
+  display: inline;
+  font-size: 20px;
+  margin-right: 35px;
+  font-weight: bold;
+  padding: 5px; }
+
+.params:hover {
+  cursor: pointer;
+  border-bottom: 5px solid chartreuse; }
+
+#search-go {
+  width: 75%;
+  position: relative;
   margin: 0 auto;
-  text-align: center; }
+  text-align: left;
+  bottom: 30px; }
+
+.go {
+  float: left;
+  height: 60px; }
+
+#search {
+  width: 700px;
+  font-size: 25px;
+  padding-left: 10px; }
+
+.input-sim {
+  margin-left: 20px;
+  width: 200px;
+  text-align: center;
+  background-color: white;
+  color: black;
+  border: 1px solid darkgrey; }
+  .input-sim h3 {
+    font-weight: normal;
+    position: relative;
+    bottom: 5px;
+    font-size: 25px; }
+
+.fa-arrow-down {
+  color: greenyellow;
+  margin-left: 20px; }
+
+.input-sim:hover {
+  cursor: pointer; }
+
+#send {
+  width: 100px;
+  margin-left: 20px;
+  border: 1px solid chartreuse;
+  background-color: chartreuse;
+  color: white;
+  font-size: 25px;
+  font-weight: bold; }
+
+#send:hover {
+  cursor: pointer;
+  background-color: white;
+  color: chartreuse; }
+
+main {
+  color: #404040; }
+  main h2 {
+    font-size: 50px;
+    margin-bottom: 5px; }
+  main p {
+    font-size: 18px; }
+  main h3 {
+    font-size: 40px;
+    text-align: left; }
+
+#about {
+  width: 45%;
+  margin: 0 auto; }
+
+.image-cont {
+  color: white;
+  width: 80%;
+  height: 2000px;
+  margin: 0 auto; }
+
+.images {
+  margin: 5px;
+  width: 400px;
+  height: 400px;
+  float: left;
+  background: no-repeat center center;
+  background-size: cover; }
+
+.square {
+  width: 400px;
+  height: 400px;
+  float: left;
+  margin: 5px; }
+
+.list {
+  background-color: dimgrey; }
+
+.resources {
+  background-color: dodgerblue; }
+
+.mobile {
+  background-color: #08B837; }
+
+#square1, #square4 {
+  width: 800px; }
+
+.column {
+  float: left; }
+
+html {
+  padding: -10px;
+  margin: -10px; }
+
+body {
+  text-align: center;
+  background-color: whitesmoke;
+  font-family: gudea;
+  margin: -10px; }
+
+li {
+  list-style-type: none; }
+
+.column ul {
+  text-align: left;
+  margin: 0 auto; }
+
+#main {
+  width: 93%;
+  margin: 0 auto;
+  background-color: white; }
 
 /*# sourceMappingURL=styles.css.map */
