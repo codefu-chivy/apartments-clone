@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "bourbon": "^4.3.4",
+    "express": "^4.15.3",
     "jquery": "^3.2.1"
   }
 }
