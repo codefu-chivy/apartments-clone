@@ -24,7 +24,7 @@ module.exports = function(grunt) {
             },
             my_target: {
                 files: {
-                    "src/js/index.min.js" : ["src/js/index.js"]
+                    "src/static/js/index.min.js" : ["src/static/js/index.js"]
                 }
             }
         }
