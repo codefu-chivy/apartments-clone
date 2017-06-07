@@ -5,42 +5,47 @@
     <title>Apartments.com Clone</title>
     <meta charset="utf-8"/>
     <meta name="description" content="A clone of the apartments.com front page"/>
+    <link href="/static/styles/css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Gudea|Merriweather|Pompiere" rel="stylesheet">
     <script src="https://use.fontawesome.com/a43c429b20.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   </head>
   <body>
     <div id="main">
       <header>
-        <nav>
-          <p><i class="fa fa-bars"></i> Menu <span>Apartments Clone</span> <a href="#">Sign Up</a>/<a href="#">Sign In</a><button>Add a Listing</button></p>
+        <nav id="nav">
+          <ul>
+            <li id="menu"><button id="menu-button"><i class="fa fa-bars fa-2x"></i><p>Menu</p></button></li>
+            <li id="main-title">Apartments.com Clone</li>
+            <li class="nav-right"><a href="#">Sign Up</a> / <a href="#">Sign In</a><button id="add">Add a Listing</button></li>
+          </ul>
         </nav>
-        <img src="../images/apartments.jpg" alt="main image" title="banner"/>
-        <div id="search-block">
-          <h1>Rent An Apartment. Find Your Home</h1>
-          <div id="search-selection">
-            <ul>
-              <li>All</li>
-              <li>Apartments</li>
-              <li>Condos</li>
-              <li>Homes</li>
-              <li>Townhomes</li>
-            </ul>
-          </div>
-          <div id="search-go">
-            <input type="search" name="search-poi" placeholder="Search by Location or Point of Interest"/>
-            <div>
-              <h3>Rent Range</h3>
+        <div id="banner" title="apartments clone banner">
+          <div id="search-block">
+            <h1 id="slogan">RENT AN APARTMENT. FIND YOUR HOME.</h1>
+            <div id="search-go">
+              <ul id="search-params">
+                <li class="first params">ALL</li>
+                <li class="params rest">APARTMENTS</li>
+                <li class="params rest">CONDOS</li>
+                <li class="params rest">HOMES</li>
+                <li class="params rest">TOWNHOMES</li>
+              </ul>
+              <input class="go" id="search" type="search" name="search-poi" placeholder="Search by Location or Point of Interest" title="Search"/>
+              <div class="input-sim go" title="Rent Range">
+                <h3 id="rent-range">Rent Range <i class="fa fa-arrow-down" aria-hidden="true"></i></h3>
+              </div>
+              <div class="input-sim go" title="Bed and Bath">
+                <h3 id="bed-bath">Beds x Baths <i class="fa fa-arrow-down" aria-hidden="true"></i></h3>
+              </div>
+              <input id="send" class="go" type="submit" value="Go" title="Press to search"/>
             </div>
-            <div>
-              <h3>Beds x Baths</h3>
-            </div>
-            <input type="submit" value="Go"/>
           </div>
         </div>
       </header>
       <main>
         <h2>What are you looking for?</h2>
-        <p>Behind each apartment for rent, every innovative tool and local neighborhood we scour, there's a team driven to help you find your next rental home.</p>
+        <p id="about">Behind each apartment for rent, every innovative tool and local neighborhood we scour, there's a team driven to help you find your next rental home.</p>
         <div class="image-cont">
           <div class="list square">
             <p><i class="fa fa-key" aria-hidden="true"></i></p>
@@ -58,8 +63,8 @@
             <p><i class="fa fa-mobile" aria-hidden="true"></i></p>
             <h3>Mobile Apps</h3>
             <p>Wherever you go, we'll be with you. Web, tablet or mobile: Your choice!</p>
-            <img src="../images/google.png" title="download on google play store" alt="download"/>
-            <img src="../images/apple.png" title="download on apple store" alt="download"/>
+            <img id="google" src="/static/images/google.png" title="download on google play store" alt="download"/>
+            <img id="apple" src="/static/images/apple.png" title="download on apple store" alt="download"/>
           </div>
         </div>
         <section class="listing">
@@ -67,65 +72,65 @@
           <p>We simplify the process of finding a new apartment by offering renters the most comprehensive database including millions of detailed and accurate apartment listings across the United States. Our innovative technology includes the POLYGON™ search tool that allows users to define their own search areas on a map and a "Plan Commute" feature that helps users search for rentals in proximity to their office.</p>
         </section>
         <section class="top-markets">
-          <h3>Top Markets</h3>
-          <div class="column1">
+          <h3 class="section-heading">Top Markets</h3>
+          <div class="column">
             <ul>
-              <li>Atlanta Apartments</li>
-              <li>Austin Apartments</li>
-              <li>Baltimore Apartments</li>
-              <li>Boston Apartments</li>
-              <li>Chicago Apartments</li>
+              <li class="section-sub">Atlanta Apartments</li>
+              <li class="section-sub">Austin Apartments</li>
+              <li class="section-sub">Baltimore Apartments</li>
+              <li class="section-sub">Boston Apartments</li>
+              <li class="section-sub">Chicago Apartments</li>
             </ul>
           </div>
-          <div class="column2">
+          <div class="column">
             <ul>
-              <li>Houston Apartments</li>
-              <li>Irvine Apartments</li>
-              <li>Los Angeles Apartments</li>
-              <li>Miami Apartments</li>
-              <li>Nashville Apartments</li>
+              <li class="section-sub">Houston Apartments</li>
+              <li class="section-sub">Irvine Apartments</li>
+              <li class="section-sub">Los Angeles Apartments</li>
+              <li class="section-sub">Miami Apartments</li>
+              <li class="section-sub">Nashville Apartments</li>
             </ul>
           </div>
-          <div class="column3">
+          <div class="column">
             <ul>
-              <li>Phoenix Apartments</li>
-              <li>Portland Apartments</li>
-              <li>Queens Apartments</li>
-              <li>San Antonio</li>
-              <li>San Diego</li>
+              <li class="section-sub">Phoenix Apartments</li>
+              <li class="section-sub">Portland Apartments</li>
+              <li class="section-sub">Queens Apartments</li>
+              <li class="section-sub">San Antonio</li>
+              <li class="section-sub">San Diego</li>
             </ul>
           </div>
         </section>
         <section class="popular">
-          <h3>Popular Searches</h3>
-          <div class="column1">
+          <h3 class="section-heading">Popular Searches</h3>
+          <div class="column">
             <ul>
-              <li>Cheap Apartments</li>
-              <li>Studios for Rent</li>
-              <li>1 Bedroom Apartments</li>
-              <li>2 Bedroom Apartments</li>
-              <li>3 Bedroom Apartments</li>
+              <li class="section-sub">Cheap Apartments</li>
+              <li class="section-sub">Studios for Rent</li>
+              <li class="section-sub">1 Bedroom Apartments</li>
+              <li class="section-sub">2 Bedroom Apartments</li>
+              <li class="section-sub">3 Bedroom Apartments</li>
             </ul>
           </div>
-          <div class="column2">
+          <div class="column">
             <ul>
-              <li>Pet Friendly Apartments</li>
-              <li>Charlotte Homes for Rent</li>
-              <li>Houston Homes for Rent</li>
-              <li>Las Vegas Homes for Rent</li>
-              <li>Orlando Homes for Rent</li>
+              <li class="section-sub">Pet Friendly Apartments</li>
+              <li class="section-sub">Charlotte Homes for Rent</li>
+              <li class="section-sub">Houston Homes for Rent</li>
+              <li class="section-sub">Las Vegas Homes for Rent</li>
+              <li class="section-sub">Orlando Homes for Rent</li>
             </ul>
           </div>
         </section>
         <section class="guides">
-          <h3>Neighborhood Guides</h3>
-          <div class="column1">
+          <h3 class="section-heading">Neighborhood Guides</h3>
+          <div class="column">
             <ul>
-              <li>Living in Briskell</li>
-              <li>Living in the Bronx</li>
-              <li>Living in East Atlanta</li>
-              <li>Living in East Austin</li>
-              <li>Living in Lincoln Park</li>
+              <li class="section-sub">Living in Briskell</li>
+              <li class="section-sub">Living in the Bronx</li>
+              <li class="section-sub">Living in East Atlanta</li>
+              <li class="section-sub">Living in East Austin</li>
+              <li class="section-sub">Living in Lincoln Park</li>
             </ul>
           </div>
         </section>
@@ -133,85 +138,85 @@
     </div>
     <footer>
       <section class="ads">
-        <h3>Advertising</h3>
-        <div class="column1">
+        <h3 class="section-heading">Advertising</h3>
+        <div class="column">
           <ul>
-            <li>Advertise</li>
-            <li>Add a Listing</li>
-            <li>Customer Portal</li>
-            <li>Community Voice</li>
+            <li class="section-sub">Advertise</li>
+            <li class="section-sub">Add a Listing</li>
+            <li class="section-sub">Customer Portal</li>
+            <li class="section-sub">Community Voice</li>
           </ul>
         </div>
       </section>
       <section class="market">
-        <h3>The Marketplace</h3>
-        <div class="column2">
+        <h3 class="section-heading">The Marketplace</h3>
+        <div class="column">
           <ul>
-            <li>Apartamentos.com</li>
-            <li>ApartmentFinder.com</li>
-            <li>ApartmentHomeLiving.com</li>
-            <li>WestsideRentals.com</li>
-            <li>LoopNet.com</li>
-            <li>Cityfeet.com</li>
-            <li>Showcase.com</li>
-            <li>BizBuySell.com</li>
-            <li>LandsofAmerica.com</li>
+            <li class="section-sub">Apartamentos.com</li>
+            <li class="section-sub">ApartmentFinder.com</li>
+            <li class="section-sub">ApartmentHomeLiving.com</li>
+            <li class="section-sub">WestsideRentals.com</li>
+            <li class="section-sub">LoopNet.com</li>
+            <li class="section-sub">Cityfeet.com</li>
+            <li class="section-sub">Showcase.com</li>
+            <li class="section-sub">BizBuySell.com</li>
+            <li class="section-sub">LandsofAmerica.com</li>
           </ul>
         </div>
       </section>
       <section class="neighborhoods">
-        <h3>Neighborhoods</h3>
-        <div class="column3">
+        <h3 class="section-heading">Neighborhoods</h3>
+        <div class="column">
           <ul>
-            <li>Canton</li>
-            <li>Downtown Indianapolis</li>
-            <li>Downtown Portland</li>
-            <li>East Village</li>
-            <li>Hyde Park</li>
-            <li>Jamaica Plain</li>
-            <li>Logan Circle</li>
-            <li>Nob Hill</li>
-            <li>Old Fourth Ward</li>
-            <li>Uptown Dallas</li>
+            <li class="section-sub">Canton</li>
+            <li class="section-sub">Downtown Indianapolis</li>
+            <li class="section-sub">Downtown Portland</li>
+            <li class="section-sub">East Village</li>
+            <li class="section-sub">Hyde Park</li>
+            <li class="section-sub">Jamaica Plain</li>
+            <li class="section-sub">Logan Circle</li>
+            <li class="section-sub">Nob Hill</li>
+            <li class="section-sub">Old Fourth Ward</li>
+            <li class="section-sub">Uptown Dallas</li>
           </ul>
         </div>
       </section>
       <section class="featured">
-        <h3>Featured Cities</h3>
-        <div class="column4">
+        <h3 class="section-heading">Featured Cities</h3>
+        <div class="column">
           <ul>
-            <li>Bellevue, WA</li>
-            <li>Birmingham, AL</li>
-            <li>Cherry Hill, NJ</li>
-            <li>Colombia, SC</li>
-            <li>Crystal Lake, IL</li>
-            <li>Fayetteville, NC</li>
-            <li>Green Bay, WI</li>
-            <li>Indianapolis, IN</li>
-            <li>Irvine, CA</li>
-            <li>Jacksonville, FL</li>
-            <li>Lafayette, IN</li>
+            <li class="section-sub">Bellevue, WA</li>
+            <li class="section-sub">Birmingham, AL</li>
+            <li class="section-sub">Cherry Hill, NJ</li>
+            <li class="section-sub">Colombia, SC</li>
+            <li class="section-sub">Crystal Lake, IL</li>
+            <li class="section-sub">Fayetteville, NC</li>
+            <li class="section-sub">Green Bay, WI</li>
+            <li class="section-sub">Indianapolis, IN</li>
+            <li class="section-sub">Irvine, CA</li>
+            <li class="section-sub">Jacksonville, FL</li>
+            <li class="section-sub">Lafayette, IN</li>
           </ul>
         </div>
       </section>
       <section class="about">
-        <h3>About Us</h3>
-        <div class="column5">
+        <h3 class="section-heading">About Us</h3>
+        <div class="column">
           <ul>
-            <li>Who We Are</li>
-            <li>Careers</li>
-            <li>Contact Us</li>
-            <li>Terms of Service</li>
-            <li>Privacy Statement</li>
-            <li>Equal Housing</li>
-            <li>Avoid Scams</li>
-            <li>Blog</li>
-            <li>Sitemap</li>
+            <li class="section-sub">Who We Are</li>
+            <li class="section-sub">Careers</li>
+            <li class="section-sub">Contact Us</li>
+            <li class="section-sub">Terms of Service</li>
+            <li class="section-sub">Privacy Statement</li>
+            <li class="section-sub">Equal Housing</li>
+            <li class="section-sub">Avoid Scams</li>
+            <li class="section-sub">Blog</li>
+            <li class="section-sub">Sitemap</li>
           </ul>
         </div>
       </section>
     </footer>
-    <script src="../../js/index.js" defer></script>
+    <script src="/static/js/index.js" defer></script>
   </body>
 </html>    
 
