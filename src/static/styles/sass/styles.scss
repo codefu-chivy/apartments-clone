@@ -1,7 +1,37 @@
-p {
+//import navigation styles
+@import "partials/navigation-styles.scss";
+
+//import banner styles
+@import "partials/banner-styles.scss";
+
+//import main styles
+@import "partials/main-styles.scss";
+
+html {
+    padding: -10px;
+    margin: -10px;
+}
+
+body {
+    text-align: center;
+    background-color: whitesmoke;
+    font-family: gudea;
+    margin: -10px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.column {
     ul {
-        color: red;
+        text-align: left;
         margin: 0 auto;
-        text-align: center;
     }
+}
+
+#main {
+    width: 93%;
+    margin: 0 auto;
+    background-color: white;
 }
