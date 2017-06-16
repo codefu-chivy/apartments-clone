@@ -1,6 +1,16 @@
 $(function() {
+    var url;
+    $.get("/is-secure", function(data) {
+        if (data.secure) {
+            url = "https://ip-api.com/json";
+        }
+        else {
+            url = "http://ip-api.com/json";
+        }
+    })
+
     //Randomize images
-    $.get("http://ip-api.com/json", function(data) {
+    $.get(url, function(data) {
         let imageArr = [
             {src: "/static/images/architecture.jpg", heading: "Parking", desc: "Check out rentals with plenty of parking in " + data.city}, 
             {src: "/static/images/commuter.jpg", heading: "Be close to work", desc: "Simplify your commute, search for rentals within 45 minutes of work"}, 
