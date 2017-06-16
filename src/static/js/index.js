@@ -7,6 +7,7 @@ $(function() {
         else {
             url = "http://ip-api.com/json";
         }
+        console.log(data.protocol);
         randomizeImages(url);
     });
 
