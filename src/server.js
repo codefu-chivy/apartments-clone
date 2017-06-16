@@ -10,7 +10,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/is-secure", (req, res) => {
-    let url = req.url;
+    let url = req.hostname;
     let secure;
     let data;
     if (url.indexOf("https") !== -1) {
@@ -22,9 +22,7 @@ app.get("/is-secure", (req, res) => {
     data = {
         secure: secure
     };
-    if (secure) {
-        res.json(data);
-    }
+    res.json(data);
 })
 
 app.listen(port, () => {
