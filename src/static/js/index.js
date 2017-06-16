@@ -1,6 +1,6 @@
 $(function() {
     //Randomize images
-    $.get("https://freegeoip.net/json", function(data) {
+    $.get("http://ip-api.com/json", function(data) {
         let imageArr = [
             {src: "/static/images/architecture.jpg", heading: "Parking", desc: "Check out rentals with plenty of parking in " + data.city}, 
             {src: "/static/images/commuter.jpg", heading: "Be close to work", desc: "Simplify your commute, search for rentals within 45 minutes of work"}, 
@@ -28,15 +28,15 @@ $(function() {
             $("<div id='square" + i + "' class='images'><div class='children' style='background-image: url(" + imageArr[randomNum].src + ")'><h3>" + imageArr[randomNum].heading + "</h3><p>" + imageArr[randomNum].desc + "</p></div></div>").hide().fadeIn().prependTo($(".image-cont"));
             randomArr.push(randomNum);
         }
+        function random() {
+            let random = Math.floor(Math.random() * imageArr.length);
+            return random;
+        }
+        $(window).resize(() => {
+            if (window.innerWidth < width) {
+                console.log("hello");
+            }
+        })
     });
     
-    function random() {
-        let random = Math.floor(Math.random() * imageArr.length);
-        return random;
-    }
-    $(window).resize(() => {
-        if (window.innerWidth < width) {
-            console.log("hello");
-        }
-    })
 });
