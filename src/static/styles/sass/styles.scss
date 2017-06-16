@@ -35,3 +35,10 @@ li {
     margin: 0 auto;
     background-color: white;
 }
+
+//Media Queries
+@media screen and (max-width: 1600px) {
+    #main {
+        width: 100%;
+    }
+}

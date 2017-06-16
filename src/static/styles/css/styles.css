@@ -83,7 +83,7 @@
   border-bottom: 5px solid chartreuse; }
 
 #search-go {
-  width: 85%;
+  width: 80%;
   position: relative;
   margin: 0 auto;
   text-align: left;
@@ -91,20 +91,21 @@
 
 .go {
   float: left;
-  height: 60px; }
+  height: 65px; }
 
 #search {
-  width: 700px;
+  width: 50%;
   font-size: 25px;
   padding-left: 10px; }
 
 .input-sim {
-  margin-left: 20px;
-  width: 200px;
+  margin-left: 10px;
+  width: 16.6666666667%;
   text-align: center;
   background-color: white;
-  color: black;
-  border: 1px solid darkgrey; }
+  color: grey;
+  border: 1px solid darkgrey;
+  padding: -20px; }
   .input-sim h3 {
     font-weight: normal;
     position: relative;
@@ -113,19 +114,25 @@
 
 .fa-arrow-down {
   color: greenyellow;
-  margin-left: 20px; }
+  margin-left: 20px;
+  transition: all .5s; }
+
+.fa-arrow-down:hover {
+  transform: rotate(180deg); }
 
 .input-sim:hover {
   cursor: pointer; }
 
 #send {
   width: 100px;
-  margin-left: 20px;
+  margin-left: 10px;
   border: 1px solid chartreuse;
   background-color: chartreuse;
   color: white;
   font-size: 25px;
-  font-weight: bold; }
+  font-weight: bold;
+  border-radius: 5px;
+  transition: color 1s; }
 
 #send:hover {
   cursor: pointer;
@@ -138,10 +145,10 @@ main {
     font-size: 50px;
     margin-bottom: 5px; }
   main p {
-    font-size: 18px; }
+    font-size: 1.8vmin; }
   main h3 {
     font-size: 40px;
-    text-align: left; }
+    margin-bottom: 10px; }
 
 #about {
   width: 46%;
@@ -149,38 +156,129 @@ main {
 
 .image-cont {
   color: white;
-  width: 80%;
-  height: 2000px;
-  margin: 0 auto; }
+  width: 85%;
+  margin: 0 auto;
+  transition: width .5s; }
 
 .images {
-  margin: 5px;
-  width: 400px;
-  height: 400px;
-  float: left;
+  margin: 2px;
+  width: 35%;
+  height: 350px;
+  display: inline-block;
+  vertical-align: top;
+  transition: all .5s; }
+  .images p, .images h3 {
+    position: relative;
+    top: 58%;
+    left: 20px;
+    text-align: left; }
+  .images p {
+    font-weight: bold;
+    width: 90%;
+    margin: 0px; }
+
+.children {
+  width: 100%;
+  height: 100%;
   background: no-repeat center center;
-  background-size: cover; }
+  background-size: cover;
+  transition: all .5s;
+  margin-top: -39px;
+  z-index: 1; }
+
+.children:hover {
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+  cursor: pointer;
+  z-index: 2; }
+
+#about {
+  margin-bottom: 20px;
+  text-align: center; }
 
 .square {
-  width: 400px;
-  height: 400px;
-  float: left;
-  margin: 5px; }
+  width: 500px;
+  height: 500px;
+  display: inline-block;
+  margin: 2px;
+  text-align: center;
+  transition: all .5s; }
+  .square p {
+    width: 80%;
+    margin: 0 auto; }
+  .square button {
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    font-family: gudea;
+    width: 180px;
+    height: 60px;
+    margin-top: 50px; }
+  .square button:hover {
+    cursor: pointer; }
+
+.fa-key, .fa-th, .fa-mobile {
+  margin-top: 50px; }
 
 .list {
   background-color: dimgrey; }
+  .list button {
+    background-color: dimgrey; }
 
 .resources {
   background-color: dodgerblue; }
+  .resources button {
+    background-color: dodgerblue; }
 
 .mobile {
   background-color: #08B837; }
+  .mobile img {
+    width: 150px;
+    height: 50px;
+    margin: 10px;
+    margin-top: 50px; }
 
-#square1, #square4 {
-  width: 800px; }
+#square4, #square1 {
+  width: 60%; }
+
+#square0 {
+  width: 95%; }
 
 .column {
   float: left; }
+
+/*.listing {
+    display: block;
+    float: none;
+}*/
+@media screen and (max-width: 1600px) {
+  .image-cont {
+    width: 90%; }
+  .images {
+    width: 30%;
+    height: 300px; }
+  .square {
+    width: 29%; }
+    .square p {
+      width: 95%; }
+  #square0 {
+    width: 90%; } }
+
+@media screen and (max-width: 1350px) {
+  .square {
+    width: 90%; } }
+
+@media screen and (max-width: 1200px) {
+  .images, .square {
+    display: block;
+    width: 70%;
+    margin: 2px auto; }
+  .image-cont {
+    margin: 0 auto; }
+  #square4, #square1, #square0 {
+    width: 70%; } }
 
 html {
   padding: -10px;
@@ -203,5 +301,9 @@ li {
   width: 93%;
   margin: 0 auto;
   background-color: white; }
+
+@media screen and (max-width: 1600px) {
+  #main {
+    width: 100%; } }
 
 /*# sourceMappingURL=styles.css.map */

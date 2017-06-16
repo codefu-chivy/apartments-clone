@@ -1,6 +1,7 @@
 $bannerFont: pompiere;
-$inputHeight: 60px;
+$inputHeight: 65px;
 $inputSize: 25px;
+$inputWidth: 50%;
 
 #banner {
     width: 100%;
@@ -33,7 +34,7 @@ $inputSize: 25px;
     border-bottom: 5px solid $hoverColor;
 }
 #search-go {
-    width: 85%;
+    width: 80%;
     position: relative;
     margin: 0 auto;
     text-align: left;
@@ -44,17 +45,18 @@ $inputSize: 25px;
     height: $inputHeight;
 }
 #search {
-    width: 700px;
+    width: $inputWidth;
     font-size: $inputSize;
     padding-left: 10px;
 }
 .input-sim {
-    margin-left: 20px;
-    width: 200px;
+    margin-left: 10px;
+    width: $inputWidth / 3;
     text-align: center;
     background-color: white;
-    color: black;
+    color: grey;
     border: 1px solid darkgrey;
+    padding: -20px;
     h3 {
         font-weight: normal;
         position: relative;
@@ -65,18 +67,24 @@ $inputSize: 25px;
 .fa-arrow-down {
     color: greenyellow;
     margin-left: 20px;
+    transition: all .5s;
+}
+.fa-arrow-down:hover {
+    transform: rotate(180deg);
 }
 .input-sim:hover {
     cursor: pointer;
 }
 #send {
     width: 100px;
-    margin-left: 20px;
+    margin-left: 10px;
     border: 1px solid $hoverColor;
     background-color: $hoverColor;
     color: white;
     font-size: $inputSize;
     font-weight: bold;
+    border-radius: 5px;
+    transition: color 1s;
 }
 #send:hover {
     cursor: pointer;
