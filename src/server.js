@@ -10,10 +10,11 @@ app.get("/", (req, res) => {
 });
 
 app.get("/is-secure", (req, res) => {
-    let url = req.hostname;
+    let protocol = req.protocol;
+    console.log(protocol)
     let secure;
     let data;
-    if (url.indexOf("https") !== -1) {
+    if (protocol === "https") {
         secure = true;
     }
     else {
