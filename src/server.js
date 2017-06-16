@@ -9,6 +9,24 @@ app.get("/", (req, res) => {
     res.sendFile(__dirname + "/static/html/index.html");
 });
 
+app.get("/is-secure", (req, res) => {
+    let url = req.url;
+    let secure;
+    let data;
+    if (url.indexOf("https") !== -1) {
+        secure = true;
+    }
+    else {
+        secure: false;
+    }
+    data = {
+        secure: secure
+    };
+    if (secure) {
+        res.json(data);
+    }
+})
+
 app.listen(port, () => {
     console.log("Listening on " + port);
 })
