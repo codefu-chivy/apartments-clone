@@ -11,7 +11,6 @@ app.get("/", (req, res) => {
 
 app.get("/is-secure", (req, res) => {
     //let protocol = req.protocol;
-    console.log(protocol)
     let secure;
     let data;
     if (req.secure) {
@@ -22,7 +21,6 @@ app.get("/is-secure", (req, res) => {
     }
     data = {
         secure: secure,
-        protocol: protocol
     };
     res.json(data);
 })
