@@ -21,7 +21,8 @@ app.get("/is-secure", (req, res) => {
         secure: false;
     }
     data = {
-        secure: secure
+        secure: secure,
+        protocol: protocol
     };
     res.json(data);
 })
