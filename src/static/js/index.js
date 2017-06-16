@@ -1,16 +1,18 @@
 $(function() {
-    var url;
     $.get("/is-secure", function(data) {
+        var url;
         if (data.secure) {
             url = "https://ip-api.com/json";
         }
         else {
             url = "http://ip-api.com/json";
         }
-    })
+        randomizeImages(url);
+    });
 
     //Randomize images
-    $.get(url, function(data) {
+    function randomizeImages(url){
+        $.get(url, function(data) {
         let imageArr = [
             {src: "/static/images/architecture.jpg", heading: "Parking", desc: "Check out rentals with plenty of parking in " + data.city}, 
             {src: "/static/images/commuter.jpg", heading: "Be close to work", desc: "Simplify your commute, search for rentals within 45 minutes of work"}, 
@@ -48,5 +50,6 @@ $(function() {
             }
         })
     });
+    }
     
 });
