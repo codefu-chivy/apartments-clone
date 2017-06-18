@@ -2,7 +2,7 @@ $(function() {
     $.get("/is-secure", function(data) {
         var url;
         if (data.secure) {
-            url = "https://ipapi.co/json/";
+            url = "https://ip-api.com/json/";
         }
         else {
             url = "http://ip-api.com/json";
