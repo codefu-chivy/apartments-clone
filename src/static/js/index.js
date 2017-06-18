@@ -2,10 +2,10 @@ $(function() {
     $.get("/is-secure", function(data) {
         var url;
         if (data.secure) {
-            url = "http://ipapi.co/json/";
+            url = "https://ipapi.co/json/";
         }
         else {
-            url = "http://ip-api.com/json";
+            url = "https://ipapi.co/json";
         }
         randomizeImages(url);
     });
