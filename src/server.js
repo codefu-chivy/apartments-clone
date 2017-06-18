@@ -10,9 +10,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/is-secure", (req, res) => {
-    //let protocol = req.protocol;
     let protocol = req.headers;
-    console.log(protocol)
     let secure;
     let data;
     if (protocol.referer.indexOf("https") !== -1) {
