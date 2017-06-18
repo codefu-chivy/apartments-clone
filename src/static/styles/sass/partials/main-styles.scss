@@ -1,7 +1,7 @@
 $mainBox: 500px;
 
 main {
-    color: #404040;
+    color: #6D6C6C;
     h2 {
         font-size: 50px;
         margin-bottom: 5px;
@@ -67,6 +67,7 @@ main {
     width: $mainBox;
     height: $mainBox;
     display: inline-block;
+    vertical-align: top;
     margin: 2px;
     text-align: center;
     transition: all .5s;
@@ -118,13 +119,6 @@ main {
 #square0 {
     width: 95%;
 }
-.column {
-    float: left;
-}
-/*.listing {
-    display: block;
-    float: none;
-}*/
 
 //Media queries for main styles
 @media screen and (max-width: 1600px) {
