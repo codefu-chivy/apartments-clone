@@ -139,6 +139,30 @@
   background-color: white;
   color: chartreuse; }
 
+@media screen and (max-width: 1415px) {
+  #search {
+    font-size: 20px; }
+  #rent-range, #bed-bath {
+    font-size: 20px;
+    top: 5px; } }
+
+@media screen and (max-width: 1230px) {
+  #search {
+    width: 35%;
+    font-size: 15px; }
+  .go {
+    height: 55px; }
+  #rent-range, #bed-bath {
+    top: 0px;
+    font-size: 15px; } }
+
+@media screen and (max-width: 1011px) {
+  #search {
+    width: 80%;
+    font-size: 25px; }
+  .input-sim {
+    display: none; } }
+
 main {
   color: #6D6C6C; }
   main h2 {
@@ -273,6 +297,17 @@ main {
     margin: 0 auto; }
   #square4, #square1, #square0 {
     width: 70%; } }
+
+@media screen and (max-width: 800px) {
+  .images, .square {
+    width: 100%; }
+  #square4, #square1, #square0 {
+    width: 100%; }
+  main p {
+    font-size: 20px; }
+  main #about {
+    width: 80%;
+    margin-bottom: 60px; } }
 
 h5 {
   font-size: 18px; }

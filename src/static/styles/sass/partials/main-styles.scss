@@ -157,3 +157,20 @@ main {
         width: 70%;
     }
 }
+@media screen and (max-width: 800px) {
+    .images, .square {
+        width: 100%;
+    }
+    #square4, #square1, #square0 {
+        width: 100%;
+    }
+    main {
+        p {
+            font-size: 20px;
+        }
+        #about {
+            width: 80%;
+            margin-bottom: 60px;
+        }
+    }
+}

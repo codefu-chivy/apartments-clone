@@ -91,3 +91,37 @@ $inputWidth: 50%;
     background-color: white;
     color: $hoverColor;
 }
+
+//media queries
+
+@media screen and (max-width: 1415px) {
+    #search {
+        font-size: 20px;
+    }
+    #rent-range, #bed-bath {
+        font-size: 20px;
+        top: 5px;
+    }
+}
+@media screen and (max-width: 1230px) {
+    #search {
+        width: 35%;
+        font-size: 15px;
+    }
+    .go {
+        height: 55px;
+    }
+    #rent-range, #bed-bath {
+        top: 0px;
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 1011px) {
+    #search {
+        width: 80%;
+        font-size: 25px;
+    }
+    .input-sim {
+        display: none;
+    }
+}
