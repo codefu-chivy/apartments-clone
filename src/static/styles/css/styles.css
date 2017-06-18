@@ -6,7 +6,7 @@
   padding-right: 0px; }
   #nav button {
     height: 55px;
-    font-family: gudea;
+    font-family: "Didact Gothic";
     font-size: 15px;
     border: none; }
   #nav button:hover {
@@ -96,7 +96,9 @@
 #search {
   width: 50%;
   font-size: 25px;
-  padding-left: 10px; }
+  padding-left: 10px;
+  font-family: "Didact Gothic";
+  color: #6D6C6C; }
 
 .input-sim {
   margin-left: 10px;
@@ -318,7 +320,8 @@ h5 {
   .listing p {
     width: 700px;
     margin: 0 auto;
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    word-spacing: 3px; }
 
 .column-misc {
   flex-shrink: 1;
@@ -392,7 +395,7 @@ footer {
 body {
   text-align: center;
   background-color: whitesmoke;
-  font-family: gudea;
+  font-family: "Didact Gothic";
   margin: 0px;
   margin-top: -20px;
   padding: -10px;
