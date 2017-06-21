@@ -32,11 +32,54 @@
                 <li class="params rest">TOWNHOMES</li>
               </ul>
               <input class="go" id="search" type="search" name="search-poi" placeholder="Search by Location or Point of Interest" title="Search"/>
-              <div class="input-sim go" title="Rent Range">
-                <h3 id="rent-range">Rent Range <i class="fa fa-arrow-down" aria-hidden="true"></i></h3>
+              <div class="input-sim go" title="Rent Range" id="rent">
+                <div id="arrow-wrap"><h3 id="rent-range">Rent Range </h3><i class="fa fa-arrow-down arrow-rent" aria-hidden="true"></i></div>
+                <div class="input-collapse">
+                  <div class="drop-inputs">
+                    <input type="text" name="min-rent" id="min" class="col-rent" placeholder="min-rent"/>
+                    <input type="text" name="max-rent" id="max" class="col-rent" placeholder="max-rent"/>
+                  </div>
+                  <div class="section-collapse">
+                    <select size="7" id="min-column">
+                      <option class="min-option" selected value="no min">No Min</option>
+                      <option class="min-option" value="$500">$500</option>
+                      <option class="min-option" value="$700">$700</option>
+                      <option class="min-option" value="$900">$900</option>
+                      <option class="min-option" value="$1100">$1100</option>
+                      <option class="min-option" value="$1300">$1300</option>
+                      <option class="min-option" value="$1500">$1500</option>
+                    </select>  
+                    <select size="7" id="max-column">
+                      <option class="max-option" value="$1100">$1100</option>
+                      <option class="max-option" value="$1300">$1300</option>
+                      <option class="max-option" value="$1500">$1500</option>
+                      <option class="max-option" value="$1700">$1700</option>
+                      <option class="max-option" value="$1900">$1900</option>
+                      <option class="max-option" value="$2100">$2100</option>
+                      <option class="max-option" value="no max" selected>No Max</option>
+                    </select>
+                  </div>
+                </div>
               </div>
               <div class="input-sim go" title="Bed and Bath">
-                <h3 id="bed-bath">Beds x Baths <i class="fa fa-arrow-down" aria-hidden="true"></i></h3>
+                <div id="arrow-wrap"><h3 id="bed-bath">Beds x Baths</h3><i class="fa fa-arrow-down arrow-bed-bath" aria-hidden="true"></i></div>
+                <div class="section-collapse-bb">
+                  <select id="beds" size="5">
+                    <option class="bed-option" value="All Beds" selected>All Beds</option>
+                    <option class="bed-option" value="Studio">Studio</option>
+                    <option class="bed-option" value="1 Bed">1 Bed</option>
+                    <option class="bed-option" value="2 Beds">2 Beds</option>
+                    <option class="bed-option" value="3 Beds">3 Beds</option>
+                    <option class="bed-option" value="4+ Beds">4 Beds</option>
+                  </select>
+                  <select id="baths" size="5">
+                    <option class="bath-option" value="All Baths" selected>All Baths</option>
+                    <option class="bath-option" value="1 Bath">1 Bath</option>
+                    <option class="bath-option" value="2 Baths">2 Baths</option>
+                    <option class="bath-option" value="3 Baths">3 Baths</option>
+                    <option class="bath-option" value="4+ Baths">4 Baths</option>
+                  </select>
+                </div>
               </div>
               <input id="send" class="go" type="submit" value="Go" title="Press to search"/>
             </div>
@@ -73,7 +116,6 @@
         </section>
         <section class="misc">
         <section class="top-markets flex-child">
-          
           <div class="column-misc">
             <ul>
               <li><h5 class="section-heading">Top Markets</h5></li>
@@ -104,7 +146,6 @@
           </div>
         </section>
         <section class="popular flex-child">
-          
           <div class="column-misc">
             <ul>
               <li><h5 class="section-heading">Popular Searches</h5></li>
@@ -126,7 +167,6 @@
           </div>
         </section>
         <section class="guides flex-child">
-          
           <div class="column-misc">
             <ul>
               <li><h5 class="section-heading">Neighborhood Guides</h5></li>
