@@ -103,7 +103,7 @@ $(function() {
                 showMax(event, $(this));
             }
         }
-        if (e.key === "0" && !$("#max").val()) {
+        if (e.key === "0" && !$("#min").val()) {
             e.preventDefault();
         }
         if ((!Number(e.key) && e.key !== "0") || e.target.value.length >= 5) {
